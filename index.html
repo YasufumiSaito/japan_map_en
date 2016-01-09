@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<head>
+	<title>Japanese Municipal Economy</title>
+	<meta property="og:image" content="map.png" />
+	<meta name="description" content="'Economic Index' is the deviation score that shows how well or bad a Japanese municipality does economically, compared to the average value (50)." />
+	<meta property="og:title" content="Japanese Municipal Economy" />
+	<meta property="og:url" content="https://YasufumiSaito.github.io/japan_map/" />
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@yas104">
+	<meta name="twitter:creator" content="@yas104">
+	<meta name="twitter:title" content="Japanese Municipal Economy">
+	<meta name="twitter:description" content="'Economic Index' is the deviation score that shows how well or bad a Japanese municipality does economically, compared to the average value (50).">
+	<meta name="twitter:image:src" content="map.png">
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="map">
+		<div id="tooltip"></div>
+		<div id="info">
+			<h1>Municipal Economy</h1>
+			<p>"Economic Index" is the deviation score that shows how well or bad a Japanese municipality does economically as of the last census in 2010, compared to the average value of 50.</p>
+			<h2>Score</h2>
+		</div>
+		<div id="info2">
+			<h2>Breakdown</h2>
+			<p>The index is calculated on the eight indices shown below. Those major economic elements are the statistic data translated into numbers from 20 to 80.</p>
+		</div>
+		<div id="credit">
+	      Data <a href="http://www5.cao.go.jp/keizai-shimon/kaigi/special/future/keizai-jinkou_data.html" target="_blank">Cabinet Office of Japan</a>&nbsp;&nbsp;|&nbsp;&nbsp;Created by <a href="https://twitter.com/yas104" target="_blank">Yasufumi Saito</a>     
+	    </div>
+	</div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.7.0/d3-legend.min.js"></script>			
+</body>
+</html>

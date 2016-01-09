@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,900,300);
+  html, body { width:100%; height:100%; margin:0; padding:0; font-family: 'Noto Sans JP', sans-serif; font-weight: thin;}
+  #map { position:absolute; top:0; bottom:0; width:100%;}
+  svg {position:absolute; width:100%; height:100%;}
+  .hidden {
+  	display: none;
+  	transition: .1s;
+  }
+  .legendLinear {
+	font-family: "Lato";
+	fill:white;
+
+  }
+
+  .legendTitle {
+	font-size: 1em;
+  }
+  #tooltip {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			margin: 0;
+			padding: 10px;
+			width: 120px;
+			height: 23px;
+			color: white;
+			font-family: 'Lato', sans-serif;
+			font-size: 1.2em;
+			font-weight: 900;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.55);
+			opacity: 0;
+			pointer-events: none;
+			border-radius:5px;
+			transition: .2s;
+		}
+	#tooltip text {
+		opacity:.6;
+	}
+
+	#info h1 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		color: #c2b59b;
+		font-size: 3em;
+	}
+	#info p, #info2 p {
+		font-weight: 300;
+		font-family: 'Lato', sans-serif;
+	}
+
+	#info {
+		position:absolute;
+		top:70px;
+		left:0;
+		padding:10px;
+		z-index: 10;
+		margin:0;
+		width:330px;
+		height:230px;
+		background-color: rgba(0, 0, 0, 0.55);
+		color: #c2b59b;
+	}
+
+	#info2 {
+		position:absolute;
+		top:330px;
+		left:0;
+		padding:10px;
+		z-index: 10;
+		margin:0;
+		width:330px;
+		height:430px;
+		background-color: rgba(0, 0, 0, 0.55);
+		color: #c2b59b;
+	}
+	.axis path, .axis line {
+			fill: none;
+			stroke:#c2b59b;
+	}
+	.axis text {
+			fill:#c2b59b;
+			font-size: 11px;
+	}
+	.highlight {
+		font-size: 6em;
+		margin: 28%;
+		color: white;
+		opacity:.8;
+	}
+
+	#info h2 {	
+		margin-bottom: 10%;
+		margin-top:0; 
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.axis path,
+	.axis line {
+		display: none;	
+	}
+	.axis text {
+		fill:white;
+		opacity:.8;
+	}
+
+	#credit {
+		position:absolute;
+		display:inline-block;
+		z-index: 5;
+		margin:0;
+		padding:0 5px 0 5px;
+		right:0;
+		bottom:20px;
+		background-color: rgba(255, 255, 255, 0.5);
+		
+	}
+	#credit p, #credit a {
+		text-decoration: none;
+		color:#000;
+		cursor:auto; 
+		font-size: 11px;
+		font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	}
+
+	@media screen and (max-width:480px) {
+		#info {
+		    top: 100px;
+		    width: 115px;
+		    height: 110px;
+		}
+		#info h1 {
+ 		   font-size: 1em;
+		}
+		#info p, #info2 p {
+		    display: none;
+		}
+		h2 {    	
+ 		   font-size: 0.9em;
+		}
+		.highlight {
+    		font-size: 3em;
+    		margin: 20%;    
+		}
+		#info2 {		    
+		    top: 230px;		    
+		    width: 330px;
+		    height: 335px;
+		}
+	}
